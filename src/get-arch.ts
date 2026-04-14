@@ -1,11 +1,14 @@
-export default function getArch(arch: string): string {
+export default function getArch(arch: string, os: string): string {
+  if (os === 'darwin') {
+    return 'universal';
+  }
   switch (arch) {
     case 'x64':
-      return '64bit';
+      return 'amd64';
     case 'arm':
-      return 'ARM';
+      return 'arm';
     case 'arm64':
-      return 'ARM64';
+      return 'arm64';
     default:
       throw new Error(`${arch} is not supported`);
   }

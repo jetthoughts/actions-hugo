@@ -5,8 +5,9 @@ export enum Tool {
   // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
   CmdName = 'hugo',
   CmdOptVersion = 'version',
-  TestVersionLatest = '0.83.1',
-  TestVersionSpec = '0.82.1'
+  TestVersionLatest = '0.139.0',
+  // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
+  TestVersionSpec = '0.139.0'
 }
 
 export enum Action {

@@ -2,6 +2,7 @@
   "name": "actions-hugo",
   "version": "3.0.0",
   "description": "GitHub Actions for Hugo",
+  "type": "module",
   "main": "lib/index.js",
   "engines": {
     "node": ">=20.10.0"

@@ -50,7 +50,7 @@ export async function installer(version: string): Promise<void> {
   const osName: string = getOS(process.platform);
   core.debug(`Operating System: ${osName}`);
 
-  const archName: string = getArch(process.arch);
+  const archName: string = getArch(process.arch, osName);
   core.debug(`Processor Architecture: ${archName}`);
 
   const toolURL: string = getURL(osName, archName, extended, version);
