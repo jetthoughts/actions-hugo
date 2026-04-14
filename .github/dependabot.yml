@@ -5,7 +5,6 @@ updates:
   schedule:
     interval: daily
     time: '11:00'
-    timezone: Japan
   labels:
   - "dependencies"
   allow:
@@ -18,7 +17,6 @@ updates:
   schedule:
     interval: "daily"
     time: '11:00'
-    timezone: Japan
   labels:
   - "CI/CD"
   commit-message:
