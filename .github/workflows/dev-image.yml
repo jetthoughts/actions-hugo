@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: make build
-      - run: make cirun cmd="npm ci"
+      - run: make cirun cmd="bun install"
       # - run: make ciall
-      - run: make cirun cmd="npm run format:check"
-      - run: make cirun cmd="npm run lint"
+      - run: make cirun cmd="bun run format:check"
+      - run: make cirun cmd="bun run lint"

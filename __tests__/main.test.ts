@@ -1,17 +1,13 @@
 import * as main from '../src/main';
 import * as io from '@actions/io';
 import path from 'path';
-import nock from 'nock';
 import {Tool, Action} from '../src/constants';
-import {FetchError} from 'node-fetch';
 import jsonTestBrew from './data/brew.json';
-// import jsonTestGithub from './data/github.json';
-
-jest.setTimeout(30000);
+import {describe, test, expect, beforeEach, afterEach, mock} from 'bun:test';
 
 describe('Integration testing run()', () => {
   beforeEach(() => {
-    jest.resetModules();
+    mock.restore();
   });
 
   afterEach(async () => {
@@ -19,7 +15,6 @@ describe('Integration testing run()', () => {
     await io.rmRF(workDir);
 
     delete process.env['INPUT_HUGO-VERSION'];
-    nock.cleanAll();
   });
 
   test('succeed in installing a custom version', async () => {
@@ -28,7 +23,7 @@ describe('Integration testing run()', () => {
     const result: main.ActionResult = await main.run();
     expect(result.exitcode).toBe(0);
     expect(result.output).toMatch(`hugo v${testVersion}`);
-  });
+  }, 30000);
 
   test('succeed in installing a custom extended version', async () => {
     const testVersion = Tool.TestVersionSpec;
@@ -38,33 +33,58 @@ describe('Integration testing run()', () => {
     expect(result.exitcode).toBe(0);
     expect(result.output).toMatch(`hugo v${testVersion}`);
     expect(result.output).toMatch(`extended`);
-  });
+  }, 30000);
 
   test('succeed in installing the latest version', async () => {
     const testVersion = 'latest';
     process.env['INPUT_HUGO-VERSION'] = testVersion;
-    nock('https://formulae.brew.sh').get(`/api/formula/${Tool.Repo}.json`).reply(200, jsonTestBrew);
+    const originalFetch = globalThis.fetch;
+    globalThis.fetch = mock(async (input: RequestInfo | URL) => {
+      const url = typeof input === 'string' ? input : input.toString();
+      if (url.includes('formulae.brew.sh')) {
+        return new Response(JSON.stringify(jsonTestBrew), {status: 200});
+      }
+      return originalFetch(input);
+    }) as typeof fetch;
+
     const result: main.ActionResult = await main.run();
     expect(result.exitcode).toBe(0);
     expect(result.output).toMatch(`hugo v${Tool.TestVersionLatest}`);
-  });
+
+    globalThis.fetch = originalFetch;
+  }, 30000);
 
   test('succeed in installing the latest extended version', async () => {
     const testVersion = 'latest';
     process.env['INPUT_HUGO-VERSION'] = testVersion;
     process.env['INPUT_EXTENDED'] = 'true';
-    nock('https://formulae.brew.sh').get(`/api/formula/${Tool.Repo}.json`).reply(200, jsonTestBrew);
+    const originalFetch = globalThis.fetch;
+    globalThis.fetch = mock(async (input: RequestInfo | URL) => {
+      const url = typeof input === 'string' ? input : input.toString();
+      if (url.includes('formulae.brew.sh')) {
+        return new Response(JSON.stringify(jsonTestBrew), {status: 200});
+      }
+      return originalFetch(input);
+    }) as typeof fetch;
+
     const result: main.ActionResult = await main.run();
     expect(result.exitcode).toBe(0);
     expect(result.output).toMatch(`hugo v${Tool.TestVersionLatest}`);
     expect(result.output).toMatch(`extended`);
-  });
+
+    globalThis.fetch = originalFetch;
+  }, 30000);
 
   test('fail to install the latest version due to 404 of brew', async () => {
     process.env['INPUT_HUGO-VERSION'] = 'latest';
-    nock('https://formulae.brew.sh').get(`/api/formula/${Tool.Repo}.json`).reply(404);
+    const originalFetch = globalThis.fetch;
+    globalThis.fetch = mock(
+      async () => new Response('Not Found', {status: 404, statusText: 'Not Found'})
+    ) as typeof fetch;
 
-    await expect(main.run()).rejects.toThrow(FetchError);
+    await expect(main.run()).rejects.toThrow(Error);
+
+    globalThis.fetch = originalFetch;
   });
 });
 
