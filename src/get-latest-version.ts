@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 export function getURL(org: string, repo: string, api: string): string {
   let url = '';
 
@@ -15,12 +13,19 @@ export function getURL(org: string, repo: string, api: string): string {
 export async function getLatestVersion(org: string, repo: string, api: string): Promise<string> {
   const url = getURL(org, repo, api);
   const response = await fetch(url);
-  const json = await response.json();
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const json: any = await response.json();
   let latestVersion = '';
   if (api === 'brew') {
     latestVersion = json.versions.stable;
   } else if (api === 'github') {
     latestVersion = json.tag_name;
+  }
+  if (!latestVersion) {
+    throw new Error(`Could not extract version from ${api} API response`);
   }
   return latestVersion;
 }

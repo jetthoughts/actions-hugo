@@ -21,12 +21,12 @@ cirun:
 
 .PHONY: test
 test:
-	$(DOCKER_RUN) npm test
+	$(DOCKER_RUN) bun test
 
 .PHONY: all
 all:
-	$(DOCKER_RUN) npm run all
+	$(DOCKER_RUN) bun run all
 
 .PHONY: ciall
 ciall:
-	$(DOCKER_RUN_CI) npm run all
+	$(DOCKER_RUN_CI) bun run all

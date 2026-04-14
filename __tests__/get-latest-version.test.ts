@@ -1,16 +1,18 @@
 import {getURL, getLatestVersion} from '../src/get-latest-version';
-import nock from 'nock';
-import {FetchError} from 'node-fetch';
 import {Tool} from '../src/constants';
 import jsonTestBrew from './data/brew.json';
 import jsonTestGithub from './data/github.json';
+import {describe, test, expect, beforeEach, afterEach, mock} from 'bun:test';
+
+let originalFetch: typeof fetch;
 
 beforeEach(() => {
-  jest.resetModules();
+  originalFetch = globalThis.fetch;
+  mock.restore();
 });
 
 afterEach(() => {
-  nock.cleanAll();
+  globalThis.fetch = originalFetch;
 });
 
 describe('getURL()', () => {
@@ -27,24 +29,28 @@ describe('getURL()', () => {
 
 describe('getLatestVersion()', () => {
   test('return latest version via brew', async () => {
-    nock('https://formulae.brew.sh').get(`/api/formula/${Tool.Repo}.json`).reply(200, jsonTestBrew);
+    globalThis.fetch = mock(
+      async () => new Response(JSON.stringify(jsonTestBrew), {status: 200})
+    ) as typeof fetch;
 
     const versionLatest: string = await getLatestVersion(Tool.Org, Tool.Repo, 'brew');
     expect(versionLatest).toMatch(Tool.TestVersionLatest);
   });
 
   test('return latest version via GitHub', async () => {
-    nock('https://api.github.com')
-      .get(`/repos/${Tool.Org}/${Tool.Repo}/releases/latest`)
-      .reply(200, jsonTestGithub);
+    globalThis.fetch = mock(
+      async () => new Response(JSON.stringify(jsonTestGithub), {status: 200})
+    ) as typeof fetch;
 
     const versionLatest: string = await getLatestVersion(Tool.Org, Tool.Repo, 'github');
     expect(versionLatest).toMatch(Tool.TestVersionLatest);
   });
 
   test('return exception 404', async () => {
-    nock('https://formulae.brew.sh').get(`/api/formula/${Tool.Repo}.json`).reply(404);
+    globalThis.fetch = mock(
+      async () => new Response('Not Found', {status: 404, statusText: 'Not Found'})
+    ) as typeof fetch;
 
-    await expect(getLatestVersion(Tool.Org, Tool.Repo, 'brew')).rejects.toThrowError(FetchError);
+    await expect(getLatestVersion(Tool.Org, Tool.Repo, 'brew')).rejects.toThrow(Error);
   });
 });

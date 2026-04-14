@@ -2,7 +2,7 @@
   "url": "https://api.github.com/repos/gohugoio/hugo/releases/42329375",
   "assets_url": "https://api.github.com/repos/gohugoio/hugo/releases/42329375/assets",
   "upload_url": "https://uploads.github.com/repos/gohugoio/hugo/releases/42329375/assets{?name,label}",
-  "html_url": "https://github.com/gohugoio/hugo/releases/tag/v0.83.1",
+  "html_url": "https://github.com/gohugoio/hugo/releases/tag/v0.139.0",
   "id": 42329375,
   "author": {
     "login": "bep",
@@ -25,9 +25,9 @@
     "site_admin": false
   },
   "node_id": "MDc6UmVsZWFzZTQyMzI5Mzc1",
-  "tag_name": "v0.83.1",
+  "tag_name": "v0.139.0",
   "target_commitish": "master",
-  "name": "v0.83.1",
+  "name": "v0.139.0",
   "draft": false,
   "prerelease": false,
   "created_at": "2021-05-02T14:38:02Z",
@@ -37,7 +37,7 @@
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229511",
       "id": 36229511,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTEx",
-      "name": "hugo_0.83.1_checksums.txt",
+      "name": "hugo_0.139.0_checksums.txt",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -65,13 +65,13 @@
       "download_count": 341,
       "created_at": "2021-05-02T15:28:32Z",
       "updated_at": "2021-05-02T15:28:32Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_checksums.txt"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_checksums.txt"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229523",
       "id": 36229523,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTIz",
-      "name": "hugo_0.83.1_DragonFlyBSD-64bit.tar.gz",
+      "name": "hugo_0.139.0_DragonFlyBSD-64bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -99,13 +99,13 @@
       "download_count": 87,
       "created_at": "2021-05-02T15:28:35Z",
       "updated_at": "2021-05-02T15:28:35Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_DragonFlyBSD-64bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_DragonFlyBSD-64bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229518",
       "id": 36229518,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTE4",
-      "name": "hugo_0.83.1_FreeBSD-32bit.tar.gz",
+      "name": "hugo_0.139.0_FreeBSD-32bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -133,13 +133,13 @@
       "download_count": 67,
       "created_at": "2021-05-02T15:28:33Z",
       "updated_at": "2021-05-02T15:28:34Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_FreeBSD-32bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_FreeBSD-32bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229525",
       "id": 36229525,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTI1",
-      "name": "hugo_0.83.1_FreeBSD-64bit.tar.gz",
+      "name": "hugo_0.139.0_FreeBSD-64bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -167,13 +167,13 @@
       "download_count": 91,
       "created_at": "2021-05-02T15:28:35Z",
       "updated_at": "2021-05-02T15:28:36Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_FreeBSD-64bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_FreeBSD-64bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229519",
       "id": 36229519,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTE5",
-      "name": "hugo_0.83.1_FreeBSD-ARM.tar.gz",
+      "name": "hugo_0.139.0_FreeBSD-ARM.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -201,13 +201,13 @@
       "download_count": 66,
       "created_at": "2021-05-02T15:28:34Z",
       "updated_at": "2021-05-02T15:28:35Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_FreeBSD-ARM.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_FreeBSD-ARM.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229509",
       "id": 36229509,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTA5",
-      "name": "hugo_0.83.1_FreeBSD-ARM64.tar.gz",
+      "name": "hugo_0.139.0_FreeBSD-ARM64.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -235,13 +235,13 @@
       "download_count": 63,
       "created_at": "2021-05-02T15:28:32Z",
       "updated_at": "2021-05-02T15:28:32Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_FreeBSD-ARM64.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_FreeBSD-ARM64.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229536",
       "id": 36229536,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTM2",
-      "name": "hugo_0.83.1_Linux-32bit.deb",
+      "name": "hugo_0.139.0_Linux-32bit.deb",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -269,13 +269,13 @@
       "download_count": 93,
       "created_at": "2021-05-02T15:28:38Z",
       "updated_at": "2021-05-02T15:28:39Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-32bit.deb"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Linux-32bit.deb"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229524",
       "id": 36229524,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTI0",
-      "name": "hugo_0.83.1_Linux-32bit.tar.gz",
+      "name": "hugo_0.139.0_Linux-32bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -303,13 +303,13 @@
       "download_count": 104,
       "created_at": "2021-05-02T15:28:35Z",
       "updated_at": "2021-05-02T15:28:35Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-32bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Linux-32bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229534",
       "id": 36229534,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTM0",
-      "name": "hugo_0.83.1_Linux-64bit.deb",
+      "name": "hugo_0.139.0_Linux-64bit.deb",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -337,13 +337,13 @@
       "download_count": 1754,
       "created_at": "2021-05-02T15:28:38Z",
       "updated_at": "2021-05-02T15:28:38Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-64bit.deb"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Linux-64bit.deb"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229515",
       "id": 36229515,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTE1",
-      "name": "hugo_0.83.1_Linux-64bit.tar.gz",
+      "name": "hugo_0.139.0_Linux-64bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -371,13 +371,13 @@
       "download_count": 15690,
       "created_at": "2021-05-02T15:28:33Z",
       "updated_at": "2021-05-02T15:28:33Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-64bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Linux-64bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229535",
       "id": 36229535,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTM1",
-      "name": "hugo_0.83.1_Linux-ARM.deb",
+      "name": "hugo_0.139.0_Linux-ARM.deb",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -405,13 +405,13 @@
       "download_count": 115,
       "created_at": "2021-05-02T15:28:38Z",
       "updated_at": "2021-05-02T15:28:38Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-ARM.deb"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Linux-ARM.deb"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229521",
       "id": 36229521,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTIx",
-      "name": "hugo_0.83.1_Linux-ARM.tar.gz",
+      "name": "hugo_0.139.0_Linux-ARM.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -439,13 +439,13 @@
       "download_count": 85,
       "created_at": "2021-05-02T15:28:34Z",
       "updated_at": "2021-05-02T15:28:35Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-ARM.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Linux-ARM.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229532",
       "id": 36229532,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTMy",
-      "name": "hugo_0.83.1_Linux-ARM64.deb",
+      "name": "hugo_0.139.0_Linux-ARM64.deb",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -473,13 +473,13 @@
       "download_count": 154,
       "created_at": "2021-05-02T15:28:37Z",
       "updated_at": "2021-05-02T15:28:38Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-ARM64.deb"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Linux-ARM64.deb"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229538",
       "id": 36229538,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTM4",
-      "name": "hugo_0.83.1_Linux-ARM64.tar.gz",
+      "name": "hugo_0.139.0_Linux-ARM64.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -507,13 +507,13 @@
       "download_count": 160,
       "created_at": "2021-05-02T15:28:39Z",
       "updated_at": "2021-05-02T15:28:39Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-ARM64.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Linux-ARM64.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229520",
       "id": 36229520,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTIw",
-      "name": "hugo_0.83.1_macOS-64bit.tar.gz",
+      "name": "hugo_0.139.0_macOS-64bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -541,13 +541,13 @@
       "download_count": 515,
       "created_at": "2021-05-02T15:28:34Z",
       "updated_at": "2021-05-02T15:28:35Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_macOS-64bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_macOS-64bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229529",
       "id": 36229529,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTI5",
-      "name": "hugo_0.83.1_macOS-ARM64.tar.gz",
+      "name": "hugo_0.139.0_macOS-ARM64.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -575,13 +575,13 @@
       "download_count": 120,
       "created_at": "2021-05-02T15:28:36Z",
       "updated_at": "2021-05-02T15:28:37Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_macOS-ARM64.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_macOS-ARM64.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229514",
       "id": 36229514,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTE0",
-      "name": "hugo_0.83.1_NetBSD-32bit.tar.gz",
+      "name": "hugo_0.139.0_NetBSD-32bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -609,13 +609,13 @@
       "download_count": 62,
       "created_at": "2021-05-02T15:28:33Z",
       "updated_at": "2021-05-02T15:28:33Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_NetBSD-32bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_NetBSD-32bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229526",
       "id": 36229526,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTI2",
-      "name": "hugo_0.83.1_NetBSD-64bit.tar.gz",
+      "name": "hugo_0.139.0_NetBSD-64bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -643,13 +643,13 @@
       "download_count": 63,
       "created_at": "2021-05-02T15:28:36Z",
       "updated_at": "2021-05-02T15:28:36Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_NetBSD-64bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_NetBSD-64bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229512",
       "id": 36229512,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTEy",
-      "name": "hugo_0.83.1_NetBSD-ARM.tar.gz",
+      "name": "hugo_0.139.0_NetBSD-ARM.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -677,13 +677,13 @@
       "download_count": 64,
       "created_at": "2021-05-02T15:28:32Z",
       "updated_at": "2021-05-02T15:28:33Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_NetBSD-ARM.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_NetBSD-ARM.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229516",
       "id": 36229516,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTE2",
-      "name": "hugo_0.83.1_OpenBSD-32bit.tar.gz",
+      "name": "hugo_0.139.0_OpenBSD-32bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -711,13 +711,13 @@
       "download_count": 64,
       "created_at": "2021-05-02T15:28:33Z",
       "updated_at": "2021-05-02T15:28:34Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_OpenBSD-32bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_OpenBSD-32bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229522",
       "id": 36229522,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTIy",
-      "name": "hugo_0.83.1_OpenBSD-64bit.tar.gz",
+      "name": "hugo_0.139.0_OpenBSD-64bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -745,13 +745,13 @@
       "download_count": 69,
       "created_at": "2021-05-02T15:28:35Z",
       "updated_at": "2021-05-02T15:28:35Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_OpenBSD-64bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_OpenBSD-64bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229528",
       "id": 36229528,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTI4",
-      "name": "hugo_0.83.1_OpenBSD-ARM.tar.gz",
+      "name": "hugo_0.139.0_OpenBSD-ARM.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -779,13 +779,13 @@
       "download_count": 65,
       "created_at": "2021-05-02T15:28:36Z",
       "updated_at": "2021-05-02T15:28:37Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_OpenBSD-ARM.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_OpenBSD-ARM.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229527",
       "id": 36229527,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTI3",
-      "name": "hugo_0.83.1_OpenBSD-ARM64.tar.gz",
+      "name": "hugo_0.139.0_OpenBSD-ARM64.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -813,13 +813,13 @@
       "download_count": 59,
       "created_at": "2021-05-02T15:28:36Z",
       "updated_at": "2021-05-02T15:28:40Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_OpenBSD-ARM64.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_OpenBSD-ARM64.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229517",
       "id": 36229517,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTE3",
-      "name": "hugo_0.83.1_Windows-32bit.zip",
+      "name": "hugo_0.139.0_Windows-32bit.zip",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -847,13 +847,13 @@
       "download_count": 276,
       "created_at": "2021-05-02T15:28:33Z",
       "updated_at": "2021-05-02T15:28:34Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Windows-32bit.zip"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Windows-32bit.zip"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229533",
       "id": 36229533,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTMz",
-      "name": "hugo_0.83.1_Windows-64bit.zip",
+      "name": "hugo_0.139.0_Windows-64bit.zip",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -881,13 +881,13 @@
       "download_count": 5215,
       "created_at": "2021-05-02T15:28:37Z",
       "updated_at": "2021-05-02T15:28:38Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Windows-64bit.zip"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_0.139.0_Windows-64bit.zip"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229537",
       "id": 36229537,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTM3",
-      "name": "hugo_extended_0.83.1_Linux-64bit.deb",
+      "name": "hugo_extended_0.139.0_Linux-64bit.deb",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -915,13 +915,13 @@
       "download_count": 2274,
       "created_at": "2021-05-02T15:28:39Z",
       "updated_at": "2021-05-02T15:28:39Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_extended_0.83.1_Linux-64bit.deb"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.0_Linux-64bit.deb"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229531",
       "id": 36229531,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTMx",
-      "name": "hugo_extended_0.83.1_Linux-64bit.tar.gz",
+      "name": "hugo_extended_0.139.0_Linux-64bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -949,13 +949,13 @@
       "download_count": 22650,
       "created_at": "2021-05-02T15:28:37Z",
       "updated_at": "2021-05-02T15:28:37Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_extended_0.83.1_Linux-64bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.0_Linux-64bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229513",
       "id": 36229513,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTEz",
-      "name": "hugo_extended_0.83.1_macOS-64bit.tar.gz",
+      "name": "hugo_extended_0.139.0_macOS-64bit.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -983,13 +983,13 @@
       "download_count": 2363,
       "created_at": "2021-05-02T15:28:33Z",
       "updated_at": "2021-05-02T15:28:33Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_extended_0.83.1_macOS-64bit.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.0_macOS-64bit.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229510",
       "id": 36229510,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTEw",
-      "name": "hugo_extended_0.83.1_macOS-ARM64.tar.gz",
+      "name": "hugo_extended_0.139.0_macOS-ARM64.tar.gz",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -1017,13 +1017,13 @@
       "download_count": 128,
       "created_at": "2021-05-02T15:28:32Z",
       "updated_at": "2021-05-02T15:28:33Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_extended_0.83.1_macOS-ARM64.tar.gz"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.0_macOS-ARM64.tar.gz"
     },
     {
       "url": "https://api.github.com/repos/gohugoio/hugo/releases/assets/36229530",
       "id": 36229530,
       "node_id": "MDEyOlJlbGVhc2VBc3NldDM2MjI5NTMw",
-      "name": "hugo_extended_0.83.1_Windows-64bit.zip",
+      "name": "hugo_extended_0.139.0_Windows-64bit.zip",
       "label": "",
       "uploader": {
         "login": "bep",
@@ -1051,10 +1051,10 @@
       "download_count": 5509,
       "created_at": "2021-05-02T15:28:37Z",
       "updated_at": "2021-05-02T15:28:37Z",
-      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_extended_0.83.1_Windows-64bit.zip"
+      "browser_download_url": "https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.0_Windows-64bit.zip"
     }
   ],
-  "tarball_url": "https://api.github.com/repos/gohugoio/hugo/tarball/v0.83.1",
-  "zipball_url": "https://api.github.com/repos/gohugoio/hugo/zipball/v0.83.1",
+  "tarball_url": "https://api.github.com/repos/gohugoio/hugo/tarball/v0.139.0",
+  "zipball_url": "https://api.github.com/repos/gohugoio/hugo/zipball/v0.139.0",
   "body": "\r\n\r\nThis is a bug-fix release with one important fix.\r\n\r\n* langs/i18n: Fix warning regression in i18n [ececd1b1](https://github.com/gohugoio/hugo/commit/ececd1b122c741567a80acd8d60ccd6356fa5323) [@bep](https://github.com/bep) [#8492](https://github.com/gohugoio/hugo/issues/8492)\r\n\r\n\r\n\r\n\r\n"
 }

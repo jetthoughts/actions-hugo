@@ -1,4 +1,5 @@
 import * as core from '@actions/core';
+import * as exec from '@actions/exec';
 import * as tc from '@actions/tool-cache';
 import * as io from '@actions/io';
 import getOS from './get-os';
@@ -50,7 +51,7 @@ export async function installer(version: string): Promise<void> {
   const osName: string = getOS(process.platform);
   core.debug(`Operating System: ${osName}`);
 
-  const archName: string = getArch(process.arch);
+  const archName: string = getArch(process.arch, osName);
   core.debug(`Processor Architecture: ${archName}`);
 
   const toolURL: string = getURL(osName, archName, extended, version);
@@ -65,6 +66,10 @@ export async function installer(version: string): Promise<void> {
   if (process.platform === 'win32') {
     const toolExtractedFolder: string = await tc.extractZip(toolAssets, tempDir);
     toolBin = `${toolExtractedFolder}/${Tool.CmdName}.exe`;
+  } else if (toolURL.endsWith('.pkg')) {
+    const pkgDir = path.join(tempDir, 'pkg');
+    await exec.exec('pkgutil', ['--expand-full', toolAssets, pkgDir]);
+    toolBin = path.join(pkgDir, 'Payload', Tool.CmdName);
   } else {
     const toolExtractedFolder: string = await tc.extractTar(toolAssets, tempDir);
     toolBin = `${toolExtractedFolder}/${Tool.CmdName}`;
