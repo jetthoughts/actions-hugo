@@ -2,6 +2,7 @@ export enum Tool {
   Name = 'Hugo',
   Org = 'gohugoio',
   Repo = 'hugo',
+  // eslint-disable-next-line @typescript-eslint/no-duplicate-enum-values
   CmdName = 'hugo',
   CmdOptVersion = 'version',
   TestVersionLatest = '0.83.1',
