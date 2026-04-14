@@ -24,5 +24,8 @@ export async function getLatestVersion(org: string, repo: string, api: string): 
   } else if (api === 'github') {
     latestVersion = json.tag_name;
   }
+  if (!latestVersion) {
+    throw new Error(`Could not extract version from ${api} API response`);
+  }
   return latestVersion;
 }

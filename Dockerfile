@@ -9,6 +9,8 @@ RUN apt-get update && \
     build-essential \
     libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev autoconf \
     ca-certificates \
+    curl \
+    unzip \
     wget && \
     rm -rf /var/lib/apt/lists/*
 
@@ -22,6 +24,9 @@ RUN wget -q "https://github.com/git/git/archive/v${GIT_VERSION}.tar.gz" && \
     ./configure --prefix=/usr && \
     make all && \
     make install
+
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:${PATH}"
 
 WORKDIR /repo
 ENV RUNNER_TEMP="/tmp"
