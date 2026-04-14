@@ -22,7 +22,7 @@ jobs:
           - 'macos-latest'
           - 'windows-latest'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
 
@@ -40,4 +40,6 @@ jobs:
         if: startsWith(matrix.os, 'ubuntu-24.04')
         run: bun run build
 
-      - run: bun test
+      - run: bun test --coverage --coverage-reporter=lcov --coverage-dir=coverage
+
+      - uses: codecov/codecov-action@75cd11691c0faa626561e295848008c8a7dddffe # v5

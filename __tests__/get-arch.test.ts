@@ -1,4 +1,5 @@
 import getArch from '../src/get-arch';
+import {describe, test, expect} from 'bun:test';
 
 describe('getArch', () => {
   test('processor architecture', () => {

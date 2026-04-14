@@ -1,4 +1,5 @@
 import getOS from '../src/get-os';
+import {describe, test, expect} from 'bun:test';
 
 describe('getOS', () => {
   test('os type', () => {

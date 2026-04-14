@@ -1,32 +1,23 @@
 ARG NODE_VERSION
 
-FROM node:${NODE_VERSION}-buster-slim
+FROM node:${NODE_VERSION}-bookworm-slim
 
 SHELL ["/bin/bash", "-l", "-c"]
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    build-essential \
-    libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev autoconf \
     ca-certificates \
     curl \
-    unzip \
-    wget && \
+    git \
+    unzip && \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /git
-ENV GIT_VERSION="2.28.0"
-RUN wget -q "https://github.com/git/git/archive/v${GIT_VERSION}.tar.gz" && \
-    tar -zxf "./v${GIT_VERSION}.tar.gz" && \
-    rm "./v${GIT_VERSION}.tar.gz" && \
-    cd "./git-${GIT_VERSION}" && \
-    make configure && \
-    ./configure --prefix=/usr && \
-    make all && \
-    make install
-
-RUN curl -fsSL https://bun.sh/install | bash
-ENV PATH="/root/.bun/bin:${PATH}"
+ARG BUN_VERSION="1.3.12"
+RUN curl -fsSL "https://github.com/oven-sh/bun/releases/download/bun-v${BUN_VERSION}/bun-linux-x64.zip" -o /tmp/bun.zip && \
+    unzip /tmp/bun.zip -d /tmp && \
+    mv /tmp/bun-linux-x64/bun /usr/local/bin/bun && \
+    chmod +x /usr/local/bin/bun && \
+    rm -rf /tmp/bun.zip /tmp/bun-linux-x64
 
 WORKDIR /repo
 ENV RUNNER_TEMP="/tmp"
